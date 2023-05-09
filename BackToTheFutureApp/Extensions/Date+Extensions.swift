@@ -10,7 +10,8 @@ extension Date {
     
     func formattedDate() -> String {
         
-        // TODO
+        let date = Date()
+        let formatted = date.formattedDate()
         return ""
     }
 }
