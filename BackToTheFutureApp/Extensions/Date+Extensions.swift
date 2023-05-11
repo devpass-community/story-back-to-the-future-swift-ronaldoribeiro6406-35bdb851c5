@@ -4,13 +4,17 @@ extension Date {
     
     func dateAfter(years: Int) -> Date? {
      
-        // TODO
-        return nil
+        let calendar = Calendar.current
+           var dateComponents = DateComponents()
+           dateComponents.year = years
+           let futureDate = calendar.date(byAdding: dateComponents, to: self)
+           return futureDate
     }
     
     func formattedDate() -> String {
         
-        // TODO
+        let date = Date()
+        let formatted = date.formattedDate()
         return ""
     }
 }
